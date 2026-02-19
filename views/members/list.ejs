@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Members</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>All Members</h1>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/members/add">Add New Member</a>
+    </nav>
+    <form method="GET" action="/">
+        <input type="text" name="name" placeholder="Search by name">
+        <select name="subcircle">
+            <option value="">All Subcircles</option>
+            <option value="nodejs">NodeJS</option>
+            <option value="php">PHP</option>
+            <option value="java">Java</option>
+            <option value="dotnet">DotNet</option>
+        </select>
+        <select name="level">
+            <option value="">All Levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+        <button type="submit">Filter</button>
+    </form>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subcircle</th>
+                <th>Level</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if(members.length === 0){ %>
+                <tr>
+                    <td colspan="4">No members found</td>
+                </tr>
+            <% } else { %>
+                <% members.forEach(member => { %>
+                    <tr>
+                        <td><%= member.name %></td>
+                        <td><%= member.subcircle %></td>
+                        <td><%= member.level %></td>
+                        <td class="actions">
+                         <a href="/members/<%= member._id %>/edit" class="edit-btn">Edit</a>
+                         <form action="/members/<%= member._id %>?_method=DELETE" method="POST" style="display:inline;">
+                         <button type="submit" class="delete-btn" onclick="return confirm('Are you sure?')">Delete</button>
+                        </form>
+                        </td>
+                    </tr>
+                <% }) %>
+            <% } %>
+        </tbody>
+    </table>
+</body>
+</html>

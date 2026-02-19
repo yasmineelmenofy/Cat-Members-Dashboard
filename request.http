@@ -1,0 +1,39 @@
+### GET all members
+GET http://localhost:3000/members
+Accept: application/json
+
+### GET members filtered by subcircle
+GET http://localhost:3000/members?subcircle=nodejs
+Accept: application/json
+
+### GET members filtered by level
+GET http://localhost:3000/members?level=beginner
+Accept: application/json
+
+### GET members filtered by name (partial match)
+GET http://localhost:3000/members?name=Yasmine
+Accept: application/json
+
+### POST - create a new member
+POST http://localhost:3000/members
+Content-Type: application/json
+
+{
+    "name": "Nada",
+    "subcircle": "dotnet",
+    "level": "beginner"
+}
+
+### PUT - update a member (replace :id with actual member _id)
+PUT http://localhost:3000/members/6997175d9f9ae06bd69187f9
+Content-Type: application/json
+
+{
+    "name": "Ali Ahmed Updated",
+    "subcircle": "java",
+    "level": "advanced"
+}
+
+### DELETE - delete a member (replace :id with actual member _id)
+DELETE http://localhost:3000/members/699717e19f9ae06bd69187ff
+Accept: application/json

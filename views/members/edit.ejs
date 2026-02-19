@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Member</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Edit Member</h1>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/members">View Members</a>
+    </nav>
+
+    <form action="/members/<%= member._id %>?_method=PUT" method="POST">
+        <label>
+            Name:
+            <input type="text" name="name" value="<%= member.name %>" required>
+        </label>
+        <br><br>
+        <label>
+            Subcircle:
+            <select name="subcircle" required>
+                <option value="nodejs" <%= member.subcircle==='nodejs'?'selected':'' %>>NodeJS</option>
+                <option value="php" <%= member.subcircle==='php'?'selected':'' %>>PHP</option>
+                <option value="java" <%= member.subcircle==='java'?'selected':'' %>>Java</option>
+                <option value="dotnet" <%= member.subcircle==='dotnet'?'selected':'' %>>DotNet</option>
+            </select>
+        </label>
+        <br><br>
+        <label>
+            Level:
+            <select name="level" required>
+                <option value="beginner" <%= member.level==='beginner'?'selected':'' %>>Beginner</option>
+                <option value="intermediate" <%= member.level==='intermediate'?'selected':'' %>>Intermediate</option>
+                <option value="advanced" <%= member.level==='advanced'?'selected':'' %>>Advanced</option>
+            </select>
+        </label>
+        <br><br>
+        <button type="submit">Update Member</button>
+    </form>
+</body>
+</html>
