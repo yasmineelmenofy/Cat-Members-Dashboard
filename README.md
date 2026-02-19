@@ -28,7 +28,8 @@ The system allows managing cat club members with full CRUD functionality.
 - **Dotenv**
 
 ---
-<img width="1714" height="834" alt="image" src="https://github.com/user-attachments/assets/37a18d49-0548-491a-abc0-4ebea8c0dde5" />
+<img width="1818" height="894" alt="image" src="https://github.com/user-attachments/assets/e5fba828-245f-49aa-99e2-a3b2f8a6fc47" />
+
 
 
 
