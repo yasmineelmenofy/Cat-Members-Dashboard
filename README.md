@@ -1,4 +1,4 @@
-# 🐱 Cat Members Dashboard
+# Cat Members Dashboard
 
 A full-stack dashboard application built with **Node.js, Express, MongoDB, and EJS** using MVC architecture.  
 The system allows managing cat club members with full CRUD functionality.
@@ -44,9 +44,6 @@ Cat-Members-dashboard/
 ├── package.json
 ├── app.mjs
 
-
-
-
 This project follows the **MVC pattern**:
 
 - **Model** → Handles database logic
@@ -54,8 +51,7 @@ This project follows the **MVC pattern**:
 - **Controller** → Business logic
 - **Routes** → Handle HTTP requests
 
-
 ## 👤 Author
 
-Developed by *Yasmine* 
+Developed by _Yasmine_
 Backend Developer 🚀
