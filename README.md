@@ -1,4 +1,4 @@
-# Cat Members Dashboard
+# Member Management System
 
 A full-stack dashboard application built with **Node.js, Express, MongoDB, and EJS** using MVC architecture.  
 The system allows managing cat club members with full CRUD functionality.
