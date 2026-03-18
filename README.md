@@ -33,7 +33,7 @@ The system allows managing club members with full CRUD functionality.
 
 ## 📂 Project Structure
 
-Cat-Members-dashboard/
+Member Management System/
 │
 ├── controllers/
 ├── models/
