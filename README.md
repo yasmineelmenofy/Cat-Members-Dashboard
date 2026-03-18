@@ -1,7 +1,7 @@
 # Member Management System
 
 A full-stack dashboard application built with **Node.js, Express, MongoDB, and EJS** using MVC architecture.  
-The system allows managing cat club members with full CRUD functionality.
+The system allows managing club members with full CRUD functionality.
 
 ---
 
@@ -51,7 +51,3 @@ This project follows the **MVC pattern**:
 - **Controller** → Business logic
 - **Routes** → Handle HTTP requests
 
-## 👤 Author
-
-Developed by _Yasmine_
-Backend Developer 🚀
